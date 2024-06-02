@@ -1,0 +1,72 @@
+# Day 93 Code
+
+# import requests
+# import os
+# import json
+# from flask import Flask
+# from requests.auth import HTTPBasicAuth
+
+# clientId = os.environ['CLIENT_ID']
+# clientSecret = os.environ['CLIENT_SECRET']
+
+# url = "https://accounts.spotify.com/api/token"
+
+# data = {"grant_type": "client_credentials"}
+
+# auth = HTTPBasicAuth(clientId, clientSecret)
+
+# # url stores the web address to connect to
+# # data creates a dictionary that communicates with the API in the correct 
+# # way. It basically says to Spotify 'Send me back the credentials based in my client ID and secret. Here's a dictionary format to put them in'.
+# # auth uses the new HTTPBasicAuth function to send your client ID and secret to Spotify as pretty much the username and password to log you in.
+# # response stores the API key that will be returned by the requests function that sends Spotify the login info needed.
+
+# response = requests.post(url, data=data, auth=auth)
+
+# access_token = response.json()["access_token"]
+
+# artist = input("Artist: ").lower()
+# artist = artist.replace(" ","%20")
+
+# url = "https://api.spotify.com/v1/search"
+# headers = {"Authorization" : f"Bearer {access_token}"}
+# search = f"?q=artist%3A{artist}&type=track&limit=1&include_external=audio&locale=en-US%2Cen%3Bq%3D0.9&offset=5&limit=30"
+
+# fullURL = f"{url}{search}"
+
+# data = requests.get(fullURL, headers=headers)
+
+# for track in data.json()["tracks"]["items"]:
+#   print(track["album"]["artists"][0]["external_urls"])
+
+# FIX THE CODE
+
+# import requests, json,os
+# from requests.auth import HTTPBasicAuth
+
+# clientID = os.environ['CLIENT_ID']
+# clientSecret = os.environ['CLIENT_SECRET']
+
+# url = "https://accounts.spotify.com/api/token"
+# data = {"grant_type":"client_credentials"}
+# auth = HTTPBasicAuth(clientID, clientSecret)
+
+# response = requests.post(url, data=data, auth=auth)
+# accessToken = response.json()["access_token"]
+
+# artist = input("Artist: ").lower()
+# artist = artist.replace(" ", "%20")
+
+# url = "https://api.spotify.com/v1/search"
+# headers = {"Authorization": f'Bearer {accessToken}'}
+# search = f"?q=artist%3A{artist}&type=track&limit=5"
+
+# fullURL = f"{url}{search}"
+
+# response = requests.get(fullURL, headers=headers)
+ 
+# data = response.json()
+
+# for track in data["tracks"]["items"]:
+#   print(track["name"])
+#   print(track["preview_url"])
