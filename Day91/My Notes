@@ -1,0 +1,10 @@
+# Day 91 Code
+
+# import requests
+
+# joke = requests.get("https://icanhazdadjoke.com/",headers={"Accept": "application/json"})
+
+# # get a random dad joke from the site endpoint and assign to a variable. The second argument (the header request) tells the script to return the json data as a string.
+
+# joke = joke.json()
+# print(joke["joke"])
