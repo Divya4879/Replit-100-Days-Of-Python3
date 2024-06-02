@@ -1,0 +1,23 @@
+"""
+# Day 9 - TypeCasting (int/float)
+
+myScore = int(input("Your score: "))
+if myScore > 100000:
+  print("Winner!")
+else:
+  print("Try again 😭")
+
+"""
+
+"""
+# Fix the code
+
+score = int(input("What was your score on the test?"))
+if score >= 80:
+  print("Not too shabby")
+elif score > 70:
+  print("Acceptable.")
+else:
+  print("Dude, you need to study more!")
+
+"""
