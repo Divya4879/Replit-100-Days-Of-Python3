@@ -1,0 +1,28 @@
+# Day 96 Code
+
+# import requests
+# from bs4 import BeautifulSoup
+
+# url = "https://www.yelp.com/search?find_desc=&find_loc=Los+Angeles%2C+CA%2C+United+States"
+
+# response = requests.get(url)
+# html = response.text
+
+# soup = BeautifulSoup(html,"html.parser")
+
+# links = soup.find_all("a",{"class": "y-css-12ly5yx"})
+
+# count = 0
+# for link in links:
+#   if count > 0:
+#     print(link.text)
+#     print(f"https://www.yelp.com{link['href']}")
+#   count += 1
+  
+#   print()
+
+"""
+The most common problem is not identifying the correct tag. Somtimes the text is in the <a> tag. Sometimes it's in an <h>. Inspect a few links to see what the common class and tag are.
+
+The tag must be the first argument in the find_all.
+"""
