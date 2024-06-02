@@ -1,0 +1,32 @@
+"""
+# Day 6 Code
+print("SECURE LOGIN")
+username = input("Username > ")
+password = input("Enter your password here > ")
+if username == "Divya" and password == "divs":
+  print("Hey Divya! Welcome back!!")
+elif username == "Riya" and password == "riya2002":
+  print("Hello dear!")
+elif username == "Python" and password == "🐍":
+  print("Is that even a name?")
+else:
+  print("You are denied entry here.Goodbye!")
+
+"""
+
+"""
+# Fix the code
+
+season = input("what is your favorite season? ")
+if season == "spring":
+  print("Ah! The birds are chirping and flowers blooming.")
+elif season == "summer":
+  print("Catch some sun and cool off with a lemonade.")
+elif season == "autumn":
+  print("The leaves are changing and the air is crisp. Enjoy!")
+elif season == "winter":
+  print("Stay warm by the fire and watch the snow fall.")
+else: 
+  print("I don't know that season. Please try again.")
+
+"""
