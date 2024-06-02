@@ -1,0 +1,26 @@
+"""
+
+firstName = input("Hello there! Enter your first name: ")
+if firstName == "Divya":
+  print("Welcome back dear!")
+  print("Keep up the good work and make great projects and apps")
+
+else:
+  print("Hello beautiful human being!")
+  print("I hope you're having a great day!")
+
+"""
+
+# Fixing the Code
+# A little change coz of my preference
+"""
+
+
+drink = input("Do you prefer coffee or tea? ")
+if drink == "coffee":
+  print("I prefer it as well.")
+  print("Excellent choice.")
+else:
+  print("Coffee is better.")
+
+"""
