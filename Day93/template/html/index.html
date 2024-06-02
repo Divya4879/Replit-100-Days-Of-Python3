@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body{
+      background-image:url("{bg-img}");
+      background-repeat:none;
+      background-size:cover;
+      
+    }
+    div{
+      text-align:center;
+      width: 60%;
+      margin:14% 20%;
+      background-color:black;
+      color:floralwhite;
+      padding:3%;
+      opacity:0.8;
+    }
+    h1{
+      font-size:40px;
+    }
+    button{
+      padding:1.5;
+    }
+  </style>
+  
+</head>
+<body>
+  <div>
+    <h1>🎧♫♪✮⋆⋆ Top Tracks By Years ⋆⋆✮♪♫🎧</h1>
+    <form action="/search" method="post">
+      <p>Year: <input type="number" name="yr" min="1900" max="2024" required> &nbsp;&nbsp;&nbsp;<button type="submit" onclick="location.href='/submit'">Go</button></p>
+    </form>
+     
+    {song_tracks}
+    
+    
+    {more}
+     
+  </div>
+  
+</body>
+</html>
