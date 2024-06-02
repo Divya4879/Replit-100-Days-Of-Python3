@@ -1,0 +1,33 @@
+"""
+myName = input("What's you name?: ")
+myAge = input("How old are you? :")
+print("Gee, that's so young!")
+replit = input("Do you like Replit? ")
+if (replit == "yes"):
+  print("OF COURSE YOU DO!")
+else:
+  print("Why in the world not??")
+
+print()
+print("So, you are " + myName)
+print("and are the ripe age of " + myAge)
+print("and clearly think that Replit is " + replit)
+"""
+
+# The To be Fixed Code
+"""
+print("Definitely not a Phishing Scam")
+print()
+myName = input("Your Name ")
+print("Thanks for logging in")
+print(myName)
+cardNumber = input("What is your credit card number? ")
+print("Thanks, I definitely won't put " + cardNumber)
+print(" into Amazon and order anything weird")
+print()
+print("Promise")
+maidenName = input("What is your Mother's maiden name? ")
+print()
+print("That's cool, I just wanted to know that")
+print(maidenName + " was your Mum's maiden name. Not because the bank requested it or anything, honest.")
+"""
