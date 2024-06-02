@@ -1,0 +1,55 @@
+# Day 90 Code
+
+# import requests, json
+# # import the required library
+
+# result = requests.get("https://randomuser.me/api/") 
+# # ask the site for data and store it in a variable
+# if result.status_code != 200:
+#   print("Error from server!")
+# # print(result.json()) # interpret the data in the variable as json and print it.
+# user = result.json()
+
+# # user = json.dumps(result,indent=2)
+
+# name = f"""{user["results"][0]["name"]["first"]} {user["results"][0]["name"]["last"]}"""
+# # Get the first and last names from the results dictionary and assign to a variable
+
+# picture = f"""{user["results"][0]["picture"]["large"]}"""
+
+# # Get the user's profile picture and assign to a variable, changing 'medium' to 'large' will make the image less pixelated
+
+# picture = requests.get(picture)
+# #downloads the image
+
+# f = open(f"{name}.jpg","wb")
+# # opens the image.jpg file for writing in binary (data of the image will be added to the repl)
+
+# f.write(picture.content)
+# #writes the image to the file  
+# f.close()
+
+# import requests
+
+# result = requests.get("https://randomuser.me/api/")
+# user = result.json()
+
+# for person in user['results']:
+#   name = f"""{person["name"]["first"]} {person["name"]["last"]}""" 
+
+#   print(name)
+
+# Fix the Code
+# import requests
+
+# result = requests.get("https://randomuser.me/api/")
+
+# if result.status_code != 200:
+#   print("The server is down rn. Try again!")
+
+# user = result.json() 
+
+# for person in user['results']: 
+#   name = f"""{person["name"]["first"]} {person["name"]["last"]}""" 
+
+  # print(name)
