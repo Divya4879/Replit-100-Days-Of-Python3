@@ -1,4 +1,4 @@
-# Day 51 Challenge
+# Day 51 Code
 
 #eval() takes the text from the file, converts it into running code, and assigns it to myEvents[] as a 2D list.
 """ 
