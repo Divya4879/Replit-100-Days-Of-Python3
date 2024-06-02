@@ -1,0 +1,38 @@
+"""
+# Day 7 Code
+
+fantasyShow = input("What is your favorite fantasy series? ")
+if fantasyShow == "harry potter":
+  print("Really, I love it as well!😊")
+  faveCharacter = input("By the way, who is your favorite character in it? ")
+  if faveCharacter == "Harry Potter":
+    print("Ikr, like he's been through so much, both in his aunt's house and during Hogwarts, but he has an amazing charecter!")
+  else:
+    print("I agree to disagree, Harry Potter's the best charecter in the show!")
+elif fantasyShow == "Twilight":
+  print("Why exactly is it your favourite?🤔")
+else:
+  print("Yeah, interesting show!!")
+
+"""
+
+"""
+# Fixing The Code
+
+order = input("What would you like to order: pizza or hamburger? ")
+if order == "hamburger":
+  print("Thank you.")
+  cheese = input("Do you want cheese?")
+  if cheese == "yes":
+    print("You got it.")
+  else: 
+    print("No cheese it is.")
+elif order == "pizza":
+  print("Pizza coming up.")
+  toppings = input("Do you want pepperoni on that?")
+  if toppings == "yes":
+    print("We will add pepperoni.")
+  else:
+    print("Your pizza will not have pepperoni.")
+
+"""
