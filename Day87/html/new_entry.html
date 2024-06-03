@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body
+    {
+      background-image:url("https://img.freepik.com/premium-photo/vibrant-purple-glowing-abstract-background-with-soft-defocused-lights-pattern_898268-637.jpg");
+      background-repeat:none;
+      background-size:cover;
+      color:white;
+
+    }
+    h1,h2,form,button{
+      text-align:center;
+    }
+    #logout{
+      padding:0.5%;
+      margin-left:47%;
+    }
+    h1{
+      color:#bd99c7;
+    }
+    textarea{
+      height: 50px;
+      width:250px;
+    }
+    #form{
+      background-color:black;
+      color:#d1bcd7;
+      width:60%;
+      padding:1%;
+      margin-left:15%;
+      margin-right:15%;
+      margin-top:3%;
+    }
+    .blogs{
+      background-color:#160326;
+      padding: 2%;
+      color:#d2d3e4;
+      opacity: 0.8;
+      width:75%;
+      margin:2% 10% 3% 10%;
+    }
+
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Divya's Blogs</h1>
+
+
+      <button id="logout" type="button" onclick="location.href='/logout'">Log Out</button>
+
+    <div id="form">
+      <h2><i>Add another entry</i></h2>
+
+      <form action="/save" method="post">
+        <p>Title: <input type="text" name="title"></p>
+        <p>Date: <input type="date" name="date"></input></p>
+
+        <p>Your blog: <textarea name="blog" minlength="50" ></textarea></p>
+        <button type="submit" onclick="location.href='/save'">Save Blog</button>
+    </form>
+    </div>
+  </div>
+  <div class="blogs">
+    {content}
+  </div>
+</body>
+</html>
