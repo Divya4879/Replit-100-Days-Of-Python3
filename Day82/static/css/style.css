@@ -1,0 +1,22 @@
+h1{
+  text-align:center;
+  color:#94afe6;
+  background-color:#02022c;
+}
+.content{
+  margin-right:5%;
+  margin-left:5%;
+}
+.img{
+  margin:2% 40% 5% 43%;
+  width:30%;
+}
+
+body{
+  color:#b7c7e6;
+  background-color:#020a22;
+}
+
+p{
+  font-family:monospace;
+}
