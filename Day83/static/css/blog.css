@@ -1,0 +1,20 @@
+body{
+  text-align:center;
+  font-weight:bold;
+  padding-left:2%;
+  padding-right:2%;
+}
+
+img{
+  width:15%
+}
+
+.author{
+  width:5%;
+  border-radius:50%;
+}
+
+p{
+  font-size:120%;
+  text-align:left;
+}
