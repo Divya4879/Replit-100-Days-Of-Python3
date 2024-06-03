@@ -1,0 +1,42 @@
+<!-- <form>
+  <p>Name: <input type="text" name="username"> </p>
+  <p>Email: <input type="Email" name="email"> </p>
+  <p>Website: <input type="url" name="website"> </p>
+  <p>Age: <input type="number" name="age"> </p>
+  <p><input type="hidden" name="userID" value="232"> </p>
+
+</form> -->
+
+<!-- hidden is particularly useful when you have some information that is relevant to the form or back end processing (like user ID), but that the user doesn't necessarily need to see. -->
+
+<!-- Day 79 Challenge -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>form</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+ <form method="post" action="/login">
+   <p>Username: <input type="text" name:"username" required></p>
+   <p>Email: <input type="email" name:"email" required></p>
+   <p>Password: <input type="password" name:"password" required></p>
+   <input type="hidden" name="userId" value="2002">
+   <!-- <p>
+     Books/Movies: 
+     <select name="choice">
+     <option value="book">Books</option>
+     <option>Movies</option>
+   </select>
+   </p> -->
+   <button type="submit">Login</button>
+ </form>
+
+</body>
+
+</html>
