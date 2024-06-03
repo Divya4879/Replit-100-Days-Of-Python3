@@ -4,12 +4,54 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="/static/css/human.css">
-  <title>robot</title>
+  <link rel="stylesheet" href="/static/css/form.css">
+  <title>form</title>
 </head>
 
 <body>
-  <h1>Hello, fellow human being 👨👩👶 </h1>
-  <img src="https://media.tenor.com/zp4x__IgSpYAAAAM/nagomi-yui-pam-pam.gif">
+<h1><i>Are you a Robot</i> 🎮🕹️👾?</h1><br><br>
+ <form method="post" action="/submit">
+   <p>Are you made of metal? 
+     <input type="radio" id="yes" name="metal" value="yes" required>
+     <label for="yes">Y</label>
+     <input type="radio" id="no" name="metal" value="no">
+     <label for="no">N</label></p>
+
+   <p>Do you dream of being ED-209 when you grow up?
+      <input type="radio" id="yes" name="dream" value="yes" required>
+      <label for="yes">Y</label>
+      <input type="radio" id="no" name="dream" value="no">
+      <label for="no">N</label></p>
+
+   <p>Were you constructed by the Sirius Cybernetics Corporation? 
+      <input type="radio" id="yes" name="constructed" value="yes" required>
+      <label for="yes">Y</label>
+      <input type="radio" id="no" name="constructed" value="no">
+      <label for="no">N</label></p>
+
+   <label for="fuel">Your source of fuel? </label>
+   <select id="fuel" name="fuel" required>
+     <option value="">--Please choose an option--</option>
+     <option value="robot">Electricity</option>
+     <option value="robot">Current</option>
+     <option value="food">🥗🥪🥬🥑🍄🍛</option>
+   </select>
+   <br><br>
+
+   <label for="sleep">No. of hours you sleep? </label>
+    <select id="sleep" name="sleep" required>
+      <option value="">--Please choose an option--</option>
+
+      <option value="human">3-5</option>
+      <option value="human">5-7</option>
+      <option value="👾">What's that?</option>
+      
+    </select>
+    <br><br>
+   
+   <button type="submit">Submit</button>
+ </form>
+
 </body>
+
 </html>
