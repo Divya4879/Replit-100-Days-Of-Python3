@@ -1,0 +1,14 @@
+body{
+  text-align:center;
+  font-weight:bold;
+  color:#cab7d1;
+  background-color:black;
+  
+}
+
+h1,form{
+  background-color:#0c0113;
+  width:60%;
+  margin-left:auto;
+  margin-right:auto;
+}
