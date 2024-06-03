@@ -1,0 +1,23 @@
+body{
+  text-align:center;
+  background-image:url("https://w0.peakpx.com/wallpaper/868/625/HD-wallpaper-autumn-gold-river-branches-reflection-lake-fall-autumn-sun-beautiful-tree-serenity-tranquility-thumbnail.jpg");
+  background-repeat:none;
+  overflow:hidden;
+  background-size:cover;
+  font-weight:bold;
+}
+
+.content{
+  width:40%;
+  border:1px solid #705205;
+  margin:20% auto 70% auto;
+  background-color:#bba525;
+  border-radius:30%;
+  opacity:0.8;
+  padding:2%;
+}
+
+a{
+  text-decoration:none;
+  color:#1f1804;
+}
